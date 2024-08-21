@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/87115898c2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <title>Home</title>
+</head>
+<body>
+    <header class="bg-black rounded-b-2xl">
+        <nav class="bg-[#021526] w-10/12 m-auto flex sm:justify-around justify-between rounded-b-2xl pl-10 pr-10 sm:pl-0 sm:pr-0 pt-3 pb-3">
+
+            <!-- nessesary link -->
+            <div class="lg:hidden block">
+                <div onclick="menu_ber()" class="text-[#cecece] text-xl cursor-pointer">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul id="menu_items" class="text-[#cecece] hidden text-lg mt-4">
+                    <li class="hover:text-white"><a href="#">Home</a></li>
+                    <li class="hover:text-white"><a href="#">Recent Project</a></li>
+                    <li class="hover:text-white"><a href="#">GitHub Profile</a></li>
+                    <li><a href="#">Get In Touch</a></li>
+                </ul>
+            </div>
+
+            <div class="link lg:block hidden">
+                <ul class="text-[#cecece] flex gap-10 text-lg">
+                    <li class="hover:text-white"><a href="#">Home</a></li>
+                    <li class="hover:text-white"><a href="#">Recent Project</a></li>
+                    <li class="hover:text-white"><a href="#">GitHub Profile</a></li>
+                    <li class="hover:text-white"><a href="#">Get In Touch</a></li>
+                </ul>
+            </div>
+            <!-- social media icon -->
+            <div class="icon">
+                <ul class="text-[#9C9C9C] flex text-xl gap-10">
+                    <li class="hover:text-white"><i class="fa-brands fa-linkedin"></i></li>
+                    <li class="hover:text-white"><i class="fa-brands fa-github"></i></li>
+                    <li class="hover:text-white"><i class="fa-brands fa-facebook"></i></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero section -->
+        <section class="text-white sm:mt-10 mt-8 pb-6">
+            <div class="lg:flex md:w-9/12 m-auto ">
+                <div class="lg:w-7/12 p-10 m-auto delay-[300ms] duration-[600ms] taos:[transform:translate3d(-200px,0,0)_scale(0.6)] taos:opacity-0" data-taos-offset="400">
+                    <h1 class="text-3xl font-bold mb-6">JISAN MAHMUD</h1>
+                    <p class="text-[#9C9C9C] leading-relaxed">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo reiciendis minus ipsum? Aut obcaecati officia, voluptatibus quas, distinctio excepturi doloribus blanditiis nam deserunt ea illo qui iure sequi minima eligendi!</p>
+                    <button id="shadow" class="bg-[#3F8E00] rounded-sm font-medium pl-10 pr-10 pt-3 pb-3 mt-10">Let's get started ></button>
+                </div>
+                <div class="lg:flex items-center hidden w-5/12 delay-[300ms] duration-[600ms] taos:[transform:translate3d(200px,0,0)_scale(1.2)] taos:opacity-0" data-taos-offset="400">
+                    <img class="rounded-full lg:w-[300px] m-auto" src="images/jisan.jpg" alt="">
+                </div>
+            </div>
+            <div class="flex-row md:w-9/12 m-auto p-10">
+                <h1 class="text-lg delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:invisible" data-taos-offset="200">WORKED WITH: </h1>
+                <ul class="flex flex-wrap text-2xl sm:text-3xl md:text-4xl justify-center sm:justify-start gap-4 mt-4 delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:invisible" data-taos-offset="200">
+                    <li class="border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
+                      <i class="devicon-python-plain"></i>
+                    </li>
+                    <li class="border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
+                      <i class="devicon-javascript-plain"></i>
+                    </li>
+                    <li class="border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
+                      <i class="devicon-cplusplus-plain"></i>
+                    </li>
+                    <li class="border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
+                      <i class="devicon-django-plain"></i>
+                    </li>
+                    <li class="border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
+                      <i class="devicon-djangorest-plain"></i>
+                    </li>
+                    <li class="border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
+                      <i class="devicon-mysql-original"></i>
+                    </li>
+                    <li class="border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
+                      <i class="devicon-sqlite-plain-wordmark"></i>
+                    </li>
+                    <li class="border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
+                      <i class="devicon-github-original"></i>
+                    </li>
+                  </ul>
+                  
+            </div>
+        </section>
+    </header>
+    <main class="md:w-9/12 m-auto p-10 text-white">
+
+        <!-- recent work -->
+        <div>
+            <!-- title section -->
+            <div class="md:w-6/12 w-10/12  m-auto text-center duration-[1000ms] taos:opacity-0" data-taos-offset="300">
+                <h1 class="text-3xl mb-6 font-bold">Recent Work</h1>
+                <p class="text-[#727272]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem maxime dolor aspernatur deleniti quas porro quod sunt quae repellat, esse dicta ullam quasi odit.</p>
+            </div>
+            <!-- left side project -->
+            <div class="lg:-mx-6 mt-14 mb-14 lg:flex lg:items-center delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:invisible" data-taos-offset="400">
+                <img class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-80 rounded-lg lg:h-[20rem]" src="images/project.jpg" alt="">
+    
+                <div class="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
+                    <p class="text-5xl font-semibold text-blue-500 ">“</p>
+    
+                    <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl lg:w-96">
+                        Where project name
+                    </h1>
+    
+                    <p class="max-w-lg mt-6 text-gray-500 dark:text-gray-400 ">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad
+                        tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa
+                        aperiam dolorum.
+                    </p>
+                    <button id="shadow2" class="bg-[#3F8E00] rounded-sm font-medium pl-10 pr-10 pt-3 pb-3 mt-10">Know me ></button>
+                </div>
+            </div>
+            <!-- right side project -->
+            <div class="lg:-mx-6 mt-14 mb-14 lg:flex flex-row-reverse lg:items-center delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:invisible" data-taos-offset="400">
+                <img class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-80 rounded-lg lg:h-[20rem]" src="images/project.jpg" alt="">
+                <div class="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
+                    <p class="text-5xl font-semibold text-blue-500 ">“</p>
+    
+                    <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl lg:w-96">
+                        Where project name
+                    </h1>
+    
+                    <p class="max-w-lg mt-6 text-gray-500 dark:text-gray-400 ">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad
+                        tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa
+                        aperiam dolorum.
+                    </p>
+                    <button id="shadow2" class="bg-[#3F8E00] rounded-sm font-medium pl-10 pr-10 pt-3 pb-3 mt-10">Know me ></button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="js/app.js"></script>
+<script>document.documentElement.classList.add('js')</script>
+<script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+</html>
