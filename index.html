@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/87115898c2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/87115898c2.js" crossorigin="anonymous"></script>
+    <script>document.documentElement.classList.add('js')</script>
     <title>Home</title>
 </head>
 <body>
@@ -137,9 +138,60 @@
                 </div>
             </div>
         </div>
+        <!-- end recent work section -->
+
+        <!-- github profie -->
+         <div class="flex md:gap-6 lg:gap-8 gap-3 bg-[#241f3775] md:p-14 p-6 rounded-lg justify-center duration-[600ms] taos:[transform:perspective(2500px)_rotateX(100deg)] taos:invisible taos:[backface-visibility:hidden]" data-taos-offset="200">
+
+            <!-- left side content -->
+            <div class="w-2/12 hidden sm:block">
+                <img class="md:w-[110px] lg:w-[120px] w-[70px] rounded-full" src="images/jisan.jpg" alt="">
+            </div>
+
+            <!-- right side content -->
+            <div class="sm:w-10/12 w-full">
+                <!-- about section -->
+                <div class="flex justify-between">
+                    <!-- right section -->
+                    <div>
+                        <h1 class="md:text-3xl sm:text-2xl text-xl">Jisan Mahmud</h1>
+                        <a class="text-blue-800" href="#">jisan-mahmud</a>
+                        <p class="mt-2">Programmer || Problem Solver || Backend Developer</p>
+                    </div>
+                    <!-- left section -->
+                    <div>
+                        <span>Joined 20 jan 2022</span>
+                    </div>
+                </div>
+                <!-- reopository, follwers and following section -->
+                <div class="flex justify-around text-center rounded-xl md:mt-8 md:mb-8 mt-6 mb-6 md:p-6 p-3 bg-[#021526]">
+                    <!-- repository -->
+                    <div>
+                        <span>Repos</span><br>
+                        <b class="md:text-3xl sm:text-xl text-lg p-0">3</b>
+                    </div>
+                    <!-- followers -->
+                    <div>
+                        <span>Followers</span><br>
+                        <b class="md:text-3xl sm:text-xl text-lg p-0">300</b>
+                    </div>
+                    <!-- following -->
+                    <div>
+                        <span>Following</span><br>
+                        <b class="md:text-3xl sm:text-xl text-lg p-0">3</b>
+                    </div>
+                </div>
+                <!-- Extra link -->
+                <ul class="flex justify-around">
+                    <li>Facebook</li>
+                    <li>Youtube</li>
+                    <li>Twitter</li>
+                    <li>Linkedin</li>
+                </ul>
+            </div>
+         </div>
     </main>
+    <script src="js/app.js"></script>
+    <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
 </body>
-<script src="js/app.js"></script>
-<script>document.documentElement.classList.add('js')</script>
-<script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
 </html>

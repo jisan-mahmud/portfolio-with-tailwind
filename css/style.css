@@ -16,7 +16,7 @@ body::-webkit-scrollbar {
     border-radius: 20px; 
   }
 
-li, h1, h2, h3, p{
+li, h1, h2, h3, p, span, b, a{
     font-family: "Noto Serif", serif;
 }
 #shadow {
