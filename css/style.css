@@ -34,10 +34,10 @@ li, h1, h2, h3, p, span, b, a{
     width: 0;
   }
   40% {
-    width: 45%; /* Full width */
+    width: 200px; /* Full width */
   }
   100% {
-    width: 45%; /* Hold width */
+    width: 200px; /* Hold width */
   }
 }
 
@@ -55,7 +55,7 @@ li, h1, h2, h3, p, span, b, a{
   white-space: nowrap;
   border-right: 2px solid white;
   animation: typing 10s steps(40, end) infinite, blink 1s step-end infinite;
-  width: 45%;
+  width: 200px;
 }
 
 .drop-shadow{
