@@ -13,8 +13,8 @@
     <title>Home</title>
 </head>
 <body>
-    <header class="bg-black rounded-b-2xl">
-        <nav class="bg-[#021526] w-10/12 m-auto flex sm:justify-around justify-between rounded-b-2xl pl-10 pr-10 sm:pl-0 sm:pr-0 pt-3 pb-3">
+    <header>
+        <nav class="w-10/12 m-auto flex sm:justify-around justify-between rounded-b-2xl pl-10 pr-10 sm:pl-0 sm:pr-0 pt-5 pb-3">
 
             <!-- nessesary link -->
             <div class="lg:hidden block">
@@ -48,8 +48,8 @@
         </nav>
 
         <!-- Hero section -->
-        <section class="text-white sm:mt-10 mt-8 pb-6">
-            <div class="lg:flex md:w-9/12 m-auto ">
+        <section class="w-[90%] drop-shadow m-auto border rounded-3xl border-neutral-600 border-t-0 text-white sm:mt-10 mt-8 pb-6">
+            <div class="lg:flex md:w-10/12 m-auto ">
                 <div class="lg:w-7/12 p-10 m-auto delay-[300ms] duration-[600ms] taos:[transform:translate3d(-200px,0,0)_scale(0.6)] taos:opacity-0" data-taos-offset="100">
                     <h1 class="w-fit typing-animation text-3xl font-bold mb-6">JISAN MAHMUD</h1>
                     <p class="text-[#9C9C9C] leading-relaxed">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo reiciendis minus ipsum? Aut obcaecati officia, voluptatibus quas, distinctio excepturi doloribus blanditiis nam deserunt ea illo qui iure sequi minima eligendi!</p>
@@ -59,35 +59,34 @@
                     <img class="rounded-full lg:w-[300px] m-auto" src="images/jisan.jpg" alt="">
                 </div>
             </div>
-            <div class="flex-row md:w-9/12 m-auto p-10">
+            <div class="flex-row md:w-10/12 m-auto p-10">
                 <h1 class="text-lg delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:invisible" data-taos-offset="100">WORKED WITH: </h1>
                 <ul class="flex flex-wrap text-2xl sm:text-3xl md:text-4xl justify-center sm:justify-start gap-4 mt-4 delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:invisible" data-taos-offset="100">
-                    <li class="border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
+                    <li class="hover:text-[#ffd845] hover:animate-bounce hover:bg-[#f5f5dc] border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
                       <i class="devicon-python-plain"></i>
                     </li>
-                    <li class="border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
+                    <li class="hover:text-[#ffd845] hover:bg-[#f5f5dc] hover:animate-bounce border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
                       <i class="devicon-javascript-plain"></i>
                     </li>
-                    <li class="border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
+                    <li class="hover:text-[#004482] hover:bg-[#f5f5dc] hover:animate-bounce border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
                       <i class="devicon-cplusplus-plain"></i>
                     </li>
-                    <li class="border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
+                    <li class="hover:text-[#092e20] hover:bg-[#f5f5dc] hover:animate-bounce border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
                       <i class="devicon-django-plain"></i>
                     </li>
-                    <li class="border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
+                    <li class="hover:text-[#a30000] hover:bg-[#f5f5dc] hover:animate-bounce border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
                       <i class="devicon-djangorest-plain"></i>
                     </li>
-                    <li class="border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
+                    <li class="hover:text-[#00618a] hover:bg-[#f5f5dc] hover:animate-bounce border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
                       <i class="devicon-mysql-original"></i>
                     </li>
-                    <li class="border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
+                    <li class="hover:text-[#0f80cc] hover:bg-[#f5f5dc] hover:animate-bounce border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
                       <i class="devicon-sqlite-plain-wordmark"></i>
                     </li>
-                    <li class="border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
+                    <li class="hover:text-[#181616] hover:bg-[#f5f5dc] hover:animate-bounce border-2 rounded-lg border-[#1B1B1B] pt-2 pb-2 pl-9 pr-9">
                       <i class="devicon-github-original"></i>
                     </li>
-                  </ul>
-                  
+                </ul>
             </div>
         </section>
     </header>
@@ -141,7 +140,7 @@
         <!-- end recent work section -->
 
         <!-- github profie -->
-         <div class="flex md:gap-6 lg:gap-8 gap-3 bg-[#241f3775] md:p-14 p-6 rounded-lg justify-center duration-[600ms] taos:[transform:perspective(2500px)_rotateX(100deg)] taos:invisible taos:[backface-visibility:hidden]" data-taos-offset="200">
+         <div class="flex md:gap-6 lg:gap-8 gap-3 bg-[#241f3775] md:p-14 p-6 rounded-lg justify-center duration-[600ms] taos:[transform:perspective(2500px)_rotateX(100deg)] taos:invisible taos:[backface-visibility:hidden]" data-taos-offset="100">
 
             <!-- left side content -->
             <div class="w-2/12 hidden sm:block">
