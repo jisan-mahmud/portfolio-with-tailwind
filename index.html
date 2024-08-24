@@ -16,19 +16,18 @@
 <body>
     <header>
         <nav>
-            <div class="w-10/12 m-auto sm:gap-0 gap-6 flex sm:justify-around justify-between rounded-b-2xl pl-10 pr-10 sm:pl-0 sm:pr-0 pt-5 pb-3">
-
+            <div class="w-10/12 m-auto sm:gap-0 gap-6 flex justify-between pl-10 pr-10 sm:pl-0 sm:pr-0 pt-5 pb-3">
                 <!-- nessesary link -->
                 <div class="lg:hidden block">
-                    <div onclick="menu_ber()" class="text-[#cecece] text-xl cursor-pointer">
-                        <i class="fa-solid fa-bars"></i>
+                    <div onclick="menu_ber(this)" class="text-[#cecece] !text-xl cursor-pointer">
+                        <i  class="fa-solid fa-bars menu_icon"></i>
                     </div>
                 </div>
     
                 <div class="link lg:block hidden">
                     <ul class="flex gap-10 text-lg">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#recent_project">Recent Project</a></li>
+                        <li><a href="#projects">Projects</a></li>
                         <li><a href="#github_profile">GitHub Profile</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -44,11 +43,11 @@
             </div>
 
             <!-- Mobile menu -->
-            <ul id="menu_items" class="hidden text-base mt-4 ml-20">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Recent Project</a></li>
-                <li><a href="#">GitHub Profile</a></li>
-                <li><a href="#">Get In Touch</a></li>
+            <ul id="menu_items" class="w-10/12 lg:!hidden m-auto hidden text-base pl-10 sm:pl-0">
+                <li><a href="#"><i class="fa-solid fa-arrow-right text-xs"></i> Home</a></li>
+                <li><a href="#projects"><i class="fa-solid fa-arrow-right text-xs"></i> Projects</a></li>
+                <li><a href="#github_profile"><i class="fa-solid fa-arrow-right text-xs"></i> GitHub Profile</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-arrow-right text-xs"></i> Contact</a></li>
             </ul>
         </nav>
 
@@ -97,15 +96,15 @@
         </section>
     </header>
     <main class="md:w-9/12 m-auto p-10 text-white">
-        <!-- recent work -->
-        <div id="recent_project">
+        <!-- project -->
+        <div id="projects">
             <!-- title section -->
             <div class="md:w-6/12 w-10/12  m-auto text-center duration-[1000ms] taos:opacity-0" data-taos-offset="300">
-                <h1 class="text-3xl mb-6 font-bold">Recent Work</h1>
+                <h1 class="text-3xl mb-6 font-bold">Projects</h1>
                 <p class="text-[#727272]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem maxime dolor aspernatur deleniti quas porro quod sunt quae repellat, esse dicta ullam quasi odit.</p>
             </div>
             <!-- left side project -->
-            <div class="lg:-mx-6 mt-14 mb-14 lg:flex lg:items-center delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:invisible" data-taos-offset="400">
+            <div class="lg:-mx-6 mt-14 mb-14 lg:flex lg:items-center delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:invisible" data-taos-offset="300">
                 <img class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-80 rounded-lg lg:h-[20rem]" src="images/project.jpg" alt="">
     
                 <div class="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
@@ -124,7 +123,7 @@
                 </div>
             </div>
             <!-- right side project -->
-            <div class="lg:-mx-6 mt-14 mb-14 lg:flex flex-row-reverse lg:items-center delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:invisible" data-taos-offset="400">
+            <div class="lg:-mx-6 mt-14 mb-14 lg:flex flex-row-reverse lg:items-center delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:invisible" data-taos-offset="300">
                 <img class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-80 rounded-lg lg:h-[20rem]" src="images/project.jpg" alt="">
                 <div class="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
                     <p class="text-5xl font-semibold text-blue-500 ">“</p>
